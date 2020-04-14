@@ -20,10 +20,13 @@ RUN apt-get update \
         vim \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install numpy
 RUN pip install wheel
-
 RUN pip install --upgrade pip
 
-RUN pip install opencv-python
+RUN pip install easydict==1.6
+RUN pip install matplotlib==2.0.2
+RUN pip install glog==0.3.1
+RUN pip install opencv_python==3.2.0.7
 RUN pip install opencv-contrib-python
+RUN pip install numpy==1.13.1
+RUN pip install scikit_learn==0.19.1
