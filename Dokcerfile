@@ -18,14 +18,13 @@ RUN apt-get update \
         libtiff-dev \
         libavformat-dev \
         libpq-dev \
+        vim \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install numpy
 
 RUN pip install --upgrade pip
 
-#安装opencv
 RUN pip install opencv-python
-#安装opencv的contrib扩展包
 RUN pip install opencv-contrib-python
 
